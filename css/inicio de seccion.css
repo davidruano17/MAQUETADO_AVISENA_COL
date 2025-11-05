@@ -1,0 +1,112 @@
+    body {
+            position: relative; 
+            background-image: url(../imagen/imagen2.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        main {
+            background-color: rgba(42, 104, 40, 0.9); 
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            color: #ffffff;
+            width: 350px;
+            max-width: 90%; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+     
+        img.logo {
+            border-radius: 60px;
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+      
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.2); 
+            color: #ffffff;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #53add6; 
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .enlace-olvido {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .boton-salir {
+            position: absolute; 
+            bottom: 20px;      
+            left: 20px;        
+            background-color: #53add6; 
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            z-index: 10;
+        }
+        
+        .boton-salir:hover {
+            background-color: #0056b3;
+        }
+
+        
+        @media (max-width: 480px) {
+            main {
+                padding: 30px 20px;
+            }
+            
+            .boton-salir {
+                bottom: 10px;
+                left: 10px;
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }

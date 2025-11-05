@@ -1,0 +1,98 @@
+/* Fondo general */
+body {
+  font-family: Arial, sans-serif;
+  background-image:url(../imagen/imagen1.png) ;
+   background-size: cover; 
+ background-position: center;
+ background-attachment: fixed; 
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  color: white;
+}
+img.sena-logo {
+            border-radius: 60px;
+            width: 80px;
+            position: absolute; 
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+/* Logo */
+header {
+  text-align: left;
+  padding: 1rem;
+}
+
+/* Contenedor principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: rgba(0, 128, 0, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 350px;
+}
+
+/* Texto */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Formulario */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: none; /* Oculto para mantener la estética visual */
+}
+
+input {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #019870;
+}
+
+/* Pie con botón SALIR */
+footer {
+  text-align: left;
+  padding: 1rem;
+}
+
+.salir {
+  background-color: #4dd0e1;
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.salir:hover {
+  background-color: #00acc1;
+}
